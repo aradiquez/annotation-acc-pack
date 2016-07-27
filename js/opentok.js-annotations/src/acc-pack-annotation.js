@@ -12,16 +12,17 @@
   // vars for the analytics logs. Internal use
   var _logEventData = {
     clientVersion: 'js-vsol-1.0.0',
-    componentId: 'annotationsKit',
+    componentId: 'annotationsAccPack',
     name: 'guidAnnotationsKit',
     actionInitialize: 'Init',
     actionStart: 'Start',
-    actionEnd: 'Done',
-    actionFreeHand: 'FreeHand',
-    actionPickerColor: 'PickerColor',
+    actionEnd: 'End',
+    actionFreeHand: 'Free Hand',
+    actionPickerColor: 'Picker Color',
     actionText: 'Text',
-    actionScreenCapture: 'ScreenCapture',
+    actionScreenCapture: 'Screen Capture',
     actionErase: 'Erase',
+    actionUseToolbar: 'Use Toolbar',
     variationAttempt: 'Attempt',
     variationError: 'Failure',
     variationSuccess: 'Success',
@@ -81,6 +82,7 @@
   var _setupUI = function () {
     var toolbar = ['<div id="toolbar"></div>'].join('\n');
     $('body').append(toolbar);
+    _log(_logEventData.actionUseToolbar, _logEventData.variationSuccess);
   };
 
   // Toolbar items
@@ -252,7 +254,6 @@
       var action = actions[id];
 
       if (!!action) {
-        _log(action, _logEventData.variationAttempt);
         _log(action, _logEventData.variationSuccess);
       }
     });
@@ -333,7 +334,6 @@
    */
   var start = function (session, options) {
     var deferred = $.Deferred();
-    _log(_logEventData.actionStart, _logEventData.variationAttempt);
 
     if (_.property('screensharing')(options)) {
       _createExternalWindow()
@@ -410,7 +410,6 @@
    * @param {Boolean} publisher Are we the publisher?
    */
   var end = function (publisher) {
-    _log(_logEventData.actionEnd, _logEventData.variationAttempt);
     _removeToolbar();
     _elements.canvas = null;
     if (!!publisher) {
@@ -445,7 +444,6 @@
     _setupUI();
     // init analytics logs
     _logAnalytics();
-    _log(_logEventData.actionInitialize, _logEventData.variationAttempt);
     _log(_logEventData.actionInitialize, _logEventData.variationSuccess);
   };
 
