@@ -57,7 +57,7 @@
 		A0AB57CB1D2C48E400F8410B /* OTAnnotationTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AB57A71D2C48E400F8410B /* OTAnnotationTextView.m */; };
 		A0AB57CC1D2C48E400F8410B /* OTAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AB57A81D2C48E400F8410B /* OTAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0AB57CD1D2C48E400F8410B /* OTAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AB57A91D2C48E400F8410B /* OTAnnotationView.m */; };
-		A0AB57CE1D2C48E400F8410B /* OTAnnotationColorPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AB57AC1D2C48E400F8410B /* OTAnnotationColorPickerView.h */; };
+		A0AB57CE1D2C48E400F8410B /* OTAnnotationColorPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AB57AC1D2C48E400F8410B /* OTAnnotationColorPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0AB57CF1D2C48E400F8410B /* OTAnnotationColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AB57AD1D2C48E400F8410B /* OTAnnotationColorPickerView.m */; };
 		A0AB57D01D2C48E400F8410B /* OTAnnotationScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AB57AE1D2C48E400F8410B /* OTAnnotationScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0AB57D11D2C48E400F8410B /* OTAnnotationScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AB57AF1D2C48E400F8410B /* OTAnnotationScrollView.m */; };
@@ -523,6 +523,7 @@
 				A05835081D2F395200E484FB /* OTAnnotationKitBundle.h in Headers */,
 				A0AB57CC1D2C48E400F8410B /* OTAnnotationView.h in Headers */,
 				A0AB57C21D2C48E400F8410B /* OTAnnotatable.h in Headers */,
+				A0AB57CE1D2C48E400F8410B /* OTAnnotationColorPickerView.h in Headers */,
 				A0AB57D01D2C48E400F8410B /* OTAnnotationScrollView.h in Headers */,
 				A0AB57DD1D2C48E400F8410B /* OTAnnotationToolbarView.h in Headers */,
 				A0AB57D31D2C48E400F8410B /* OTFullScreenAnnotationViewController.h in Headers */,
@@ -534,7 +535,6 @@
 				A0AB57DF1D2C48E400F8410B /* OTAnnotationToolbarView_Private.h in Headers */,
 				A0B63EC91D48089200123B51 /* OTAnnotationView+Signaling.h in Headers */,
 				A0AB57D51D2C48E400F8410B /* OTAnnotationScreenCaptureView.h in Headers */,
-				A0AB57CE1D2C48E400F8410B /* OTAnnotationColorPickerView.h in Headers */,
 				A0AB57FC1D2C49BF00F8410B /* UIViewController+Helper.h in Headers */,
 				A0AB58301D2C4DBD00F8410B /* Constants.h in Headers */,
 				A0AB57D21D2C48E400F8410B /* OTAnnotationScrollView_Private.h in Headers */,

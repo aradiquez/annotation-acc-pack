@@ -33,7 +33,7 @@
         [self.superview insertSubview:self.colorPickerView belowSubview:self];
         [UIView animateWithDuration:1.0 animations:^(){
             
-            CGFloat newY = selfFrame.origin.y - HeightOfColorPicker - GapOfToolBarAndColorPicker;
+            CGFloat newY = selfFrame.origin.y - HeightOfColorPicker - (self.gapOfToolBarAndColorPicker ? self.gapOfToolBarAndColorPicker : GapOfToolBarAndColorPicker);
             self.colorPickerView.frame = CGRectMake(selfFrame.origin.x, newY, CGRectGetWidth(self.bounds), HeightOfColorPicker);
         }];
     }
@@ -47,7 +47,7 @@
     CGRect colorPickerViewFrame = self.colorPickerView.frame;
     [UIView animateWithDuration:1.0 animations:^(){
         
-        CGFloat newY = colorPickerViewFrame.origin.y + HeightOfColorPicker + GapOfToolBarAndColorPicker;
+        CGFloat newY = colorPickerViewFrame.origin.y + HeightOfColorPicker + (self.gapOfToolBarAndColorPicker ? self.gapOfToolBarAndColorPicker : GapOfToolBarAndColorPicker);
         self.colorPickerView.frame = CGRectMake(0, newY, CGRectGetWidth(colorPickerViewFrame), HeightOfColorPicker);
     } completion:^(BOOL finished){
         

@@ -5,10 +5,9 @@
 //
 
 #import <OTAnnotationKit/OTAnnotationKit.h>
-#import "OTAnnotationColorPickerView.h"
 
 @interface OTAnnotationToolbarView ()
 
 @property (nonatomic) UIView *selectionShadowView;
-@property (nonatomic) OTAnnotationColorPickerView *colorPickerView;
+
 @end

@@ -16,7 +16,7 @@ class AnnotationBlankCanvasViewController: UIViewController {
             screenShareView.initializeToolbarView()
             let height = screenShareView.toolbarView!.bounds.size.height
             screenShareView.toolbarView!.frame = CGRectMake(0, CGRectGetHeight(UIScreen.mainScreen().bounds) - height, screenShareView.toolbarView!.bounds.size.width, height)
-            
+            //screenShareView.toolbarView!.setValue(2.0, forKey: "gapOfToolBarAndColorPicker")
             self.view.addSubview(screenShareView)
             self.view.addSubview(screenShareView.toolbarView!)
         }

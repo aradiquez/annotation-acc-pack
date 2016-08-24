@@ -7,7 +7,6 @@
 #import "OTAnnotationToolbarView.h"
 #import "OTAnnotationToolbarView_UserInterfaces.h"
 #import "OTAnnotationToolbarView+Animation.h"
-#import "OTAnnotationColorPickerView.h"
 #import "OTAnnotationToolbarButton.h"
 #import "OTAnnotationKitBundle.h"
 
@@ -25,6 +24,8 @@
 @property (nonatomic) LHToolbar *toolbar;
 @property (weak, nonatomic) OTAnnotationScrollView *annotationScrollView;
 
+@property (nonatomic) CGFloat gapOfToolBarAndColorPicker;
+
 @property (nonatomic) UIButton *doneButton;
 @property (nonatomic) OTAnnotationToolbarButton *annotateButton;
 @property (nonatomic) OTAnnotationColorPickerViewButton *colorButton;
@@ -33,6 +34,7 @@
 @property (nonatomic) OTAnnotationToolbarButton *eraseButton;
 
 @property (nonatomic) OTAnnotationScreenCaptureViewController *captureViewController;
+@property (nonatomic) OTAnnotationColorPickerView *colorPickerView;
 @end
 
 @implementation OTAnnotationToolbarView
